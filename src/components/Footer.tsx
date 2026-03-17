@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram } from "lucide-react";
+import logoWhite from "@/assets/logo_white.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
@@ -7,7 +8,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
-          <h3 className="font-display text-2xl font-light mb-3">The Open Door Center</h3>
+          <img src={logoWhite} alt="The Open Door Center" className="h-10 w-auto mb-3" />
           <p className="font-body text-sm opacity-80 leading-relaxed">
             A place where every door is open.
           </p>

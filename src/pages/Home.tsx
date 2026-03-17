@@ -20,7 +20,7 @@ const Home = () => (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/hero-mountain.jpg')" }}
+        style={{ backgroundImage: "url('/images/background.jpg')" }}
       />
       <div className="absolute inset-0 bg-primary/40" />
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
@@ -31,7 +31,7 @@ const Home = () => (
           You Are Not Alone on This Journey
         </h1>
         <p className="font-display text-lg md:text-xl italic text-card/90 mb-10 leading-relaxed max-w-2xl mx-auto">
-          A donation-based coaching and counseling center in Tbilisi, Georgia — for expats, families, and individuals ready to thrive.
+          A donation-based coaching and counseling center in Tbilisi, Georgia - for expats, families, and individuals ready to thrive.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/team">
@@ -97,7 +97,7 @@ const Home = () => (
               The Open Door Center operates on a donation-based model so that cost is never a barrier to care. Founded by an international team with deep roots in cross-cultural living, we serve expats, families, and individuals in Tbilisi and beyond.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-6">
-              Whether you're navigating a major life transition, strengthening your marriage, or simply seeking clarity — we walk beside you every step of the way.
+              Whether you're navigating a major life transition, strengthening your marriage, or simply seeking clarity - we walk beside you every step of the way.
             </p>
             <Link to="/about" className="inline-flex items-center gap-2 font-body text-sm font-semibold text-primary hover:text-secondary transition-colors">
               Learn More About Us <ArrowRight size={16} />

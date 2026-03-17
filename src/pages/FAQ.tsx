@@ -10,15 +10,15 @@ import BookingBanner from "@/components/BookingBanner";
 const faqs = [
   {
     q: "What does a session look like?",
-    a: "Your first session is a get-to-know-you meeting where we learn about you, your goals, and how we can best support you. After that, each session is tailored to your unique journey. Sessions can be in-person at our Tbilisi center or online — whatever works best for you.",
+    a: "Your first session is a get-to-know-you meeting where we learn about you, your goals, and how we can best support you. After that, each session is tailored to your unique journey. Sessions can be in-person at our Tbilisi center or online - whatever works best for you.",
   },
   {
     q: "How do you set goals in coaching?",
-    a: "Goals are set intrinsically — meaning they come from you, not us. We believe this creates the most momentum for lasting change. Our coaches walk beside you, helping you discover your path. You change your life; we guide the way.",
+    a: "Goals are set intrinsically - meaning they come from you, not us. We believe this creates the most momentum for lasting change. Our coaches walk beside you, helping you discover your path. You change your life; we guide the way.",
   },
   {
     q: "Is this a church or a coaching center?",
-    a: "Both! The Open Door Center is a professional coaching and counseling center where a Church of the Nazarene meets on Sundays. Faith integration in coaching is always your choice — we serve people of all backgrounds and beliefs.",
+    a: "Both! The Open Door Center is a professional coaching and counseling center where a Church of the Nazarene meets on Sundays. Faith integration in coaching is always your choice - we serve people of all backgrounds and beliefs.",
   },
 ];
 
