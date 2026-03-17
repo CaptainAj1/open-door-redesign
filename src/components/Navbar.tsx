@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
+import logoWhite from "@/assets/logo_white.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -37,14 +39,11 @@ const Navbar = () => {
     >
       <nav className="container-narrow mx-auto flex items-center justify-between px-4 md:px-8 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" className="flex-shrink-0">
-            <rect x="4" y="2" width="20" height="24" rx="3" stroke={solid ? "hsl(145,27%,39%)" : "white"} strokeWidth="2" fill="none"/>
-            <line x1="14" y1="6" x2="14" y2="22" stroke={solid ? "hsl(145,27%,39%)" : "white"} strokeWidth="1.5"/>
-            <circle cx="16.5" cy="14" r="1.5" fill={solid ? "hsl(145,27%,39%)" : "white"}/>
-          </svg>
-          <span className={`font-display text-xl md:text-2xl font-medium tracking-tight transition-colors ${solid ? "text-primary" : "text-card"}`}>
-            The Open Door Center
-          </span>
+          <img
+            src={solid ? logo : logoWhite}
+            alt="The Open Door Center"
+            className="h-10 md:h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}

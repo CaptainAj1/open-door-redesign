@@ -1,6 +1,12 @@
 import { Phone, Mail, Facebook, Instagram } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 import BookingBanner from "@/components/BookingBanner";
+import kelseyPhoto from "@/assets/team/Kelsey.avif";
+import ericaPhoto from "@/assets/team/Erica.avif";
+import lukePhoto from "@/assets/team/Luke.avif";
+import holliePhoto from "@/assets/team/Hollie.avif";
+import ketiPhoto from "@/assets/team/Keti.avif";
+import biancaPhoto from "@/assets/team/Bianca.avif";
 
 const team = [
   {
@@ -8,7 +14,7 @@ const team = [
     role: "Director",
     specialty: "Brain/Marriage/Transitions Coach",
     phone: "595 013 614",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=344&q=80",
+    photo: kelseyPhoto,
     bio: "ICF-certified PCC coach with 15 years of international experience. Specializes in marriage, transitions, and brain-based coaching.",
   },
   {
@@ -16,7 +22,7 @@ const team = [
     role: "Head of Counseling",
     specialty: "Marriage/Family/Women/Trauma",
     phone: "595 05 62 96",
-    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=344&q=80",
+    photo: ericaPhoto,
     bio: "Licensed counselor specializing in marriage, family dynamics, women's issues, and trauma recovery.",
   },
   {
@@ -24,7 +30,7 @@ const team = [
     role: "Biblical Counselor",
     specialty: "EN, RU, AZ",
     phone: "599 13 79 96",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=344&q=80",
+    photo: lukePhoto,
     bio: "Multilingual biblical counselor offering sessions in English, Russian, and Azerbaijani.",
   },
   {
@@ -32,7 +38,7 @@ const team = [
     role: "Midwife & Lactation Support",
     specialty: "Home-based Birth Support",
     phone: "599 058 024",
-    photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=344&q=80",
+    photo: holliePhoto,
     bio: "Experienced home-based midwife providing compassionate birth and breastfeeding support.",
   },
   {
@@ -40,14 +46,14 @@ const team = [
     role: "Georgian Communications",
     specialty: "Local Outreach",
     phone: "593 489 014",
-    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=344&q=80",
+    photo: ketiPhoto,
     bio: "Manages Georgian-language communications and community outreach for the center.",
   },
   {
     name: "Bianca Vermeulen",
     role: "Marketing Manager",
     specialty: "Brand & Digital",
-    photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=344&q=80",
+    photo: biancaPhoto,
     bio: "Leads marketing strategy and digital presence for The Open Door Center.",
   },
 ];
@@ -72,7 +78,7 @@ const Team = () => (
         <blockquote className="font-display text-xl md:text-2xl italic text-accent-foreground leading-relaxed max-w-2xl mx-auto">
           "I will ask the Father, and he will give you another advocate to help you and be with you forever."
         </blockquote>
-        <cite className="font-body text-sm text-muted-foreground mt-2 block">— John 14:16</cite>
+        <cite className="font-body text-sm text-muted-foreground mt-2 block">- John 14:16</cite>
       </FadeInSection>
     </section>
 

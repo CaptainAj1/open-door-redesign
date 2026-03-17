@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 import BookingBanner from "@/components/BookingBanner";
+import kelseyPhoto from "@/assets/team/Kelsey.avif";
 
 const About = () => (
   <main>
@@ -12,7 +13,7 @@ const About = () => (
           About Us
         </h1>
         <p className="font-display text-lg italic text-primary-foreground/80 max-w-xl mx-auto">
-          Coaching, counseling, and community — all under one roof.
+          Coaching, counseling, and community - all under one roof.
         </p>
       </div>
     </section>
@@ -33,7 +34,7 @@ const About = () => (
             "Everyone who wants coaching or counseling should have access to it."
           </blockquote>
           <p className="font-body text-foreground leading-relaxed mb-4">
-            The Open Door Center is a donation-based coaching and counseling center in Tbilisi, Georgia. Our mission is to make professional coaching and counseling accessible to everyone — regardless of financial means.
+            The Open Door Center is a donation-based coaching and counseling center in Tbilisi, Georgia. Our mission is to make professional coaching and counseling accessible to everyone - regardless of financial means.
           </p>
           <p className="font-body text-muted-foreground leading-relaxed mb-4">
             Founded by a team of international coaches and counselors, we serve expats, local families, and individuals navigating life's biggest transitions. From marriage coaching to cross-cultural support, we walk beside you.
@@ -52,7 +53,7 @@ const About = () => (
           <div className="bg-card rounded-2xl shadow-card p-8 md:p-12 max-w-3xl mx-auto">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80"
+                src={kelseyPhoto}
                 alt="Kelsey Hendrix"
                 className="w-40 h-40 rounded-full object-cover shadow-card flex-shrink-0"
                 loading="lazy"
@@ -79,7 +80,7 @@ const About = () => (
     <section className="bg-primary py-20 px-4">
       <FadeInSection className="container-narrow mx-auto text-center">
         <blockquote className="font-display text-2xl md:text-4xl font-light italic text-primary-foreground leading-relaxed max-w-3xl mx-auto">
-          "Whether you are working on your family, your business, or self-development — you are not alone. We are here for you."
+          "Whether you are working on your family, your business, or self-development - you are not alone. We are here for you."
         </blockquote>
       </FadeInSection>
     </section>
