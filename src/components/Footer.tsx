@@ -52,7 +52,7 @@ const Footer = () => (
 
       <div className="border-t border-primary-foreground/20 mt-12 pt-6 text-center">
         <p className="font-body text-xs opacity-60">
-          © 2025 The Open Door Center · Tbilisi, Georgia
+          © 2026 The Open Door Center · Tbilisi, Georgia
         </p>
       </div>
     </div>
