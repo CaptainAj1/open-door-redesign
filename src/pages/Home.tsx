@@ -4,6 +4,7 @@ import { Heart, Users, Globe, ArrowRight, ArrowDown, Baby, Handshake, RefreshCw,
 import FadeInSection from "@/components/FadeInSection";
 import WaveDivider from "@/components/WaveDivider";
 import BookingBanner from "@/components/BookingBanner";
+import counsellingPhoto from "@/assets/counselling.jpg";
 
 const services = [
   { icon: Baby, title: "Pregnancy & Breastfeeding Coaching", desc: "Support for new and expecting mothers through every stage of the journey." },
@@ -83,8 +84,8 @@ const Home = () => (
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <FadeInSection>
             <img
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80"
-              alt="Woman in natural light"
+              src={counsellingPhoto}
+              alt="Counselling session"
               className="rounded-2xl shadow-card w-full object-cover aspect-[4/5]"
               loading="lazy"
             />

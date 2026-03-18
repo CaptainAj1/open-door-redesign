@@ -37,10 +37,10 @@ const Footer = () => (
         <div>
           <h4 className="font-body text-sm font-semibold uppercase tracking-wider mb-4 opacity-80">Connect</h4>
           <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+            <a href="https://www.facebook.com/theopendoorcenter" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
               <Facebook size={20} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+            <a href="https://www.instagram.com/hendrix.coaching" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
               <Instagram size={20} />
             </a>
           </div>
@@ -52,7 +52,7 @@ const Footer = () => (
 
       <div className="border-t border-primary-foreground/20 mt-12 pt-6 text-center">
         <p className="font-body text-xs opacity-60">
-          © 2025 The Open Door Center · Tbilisi, Georgia
+          © 2026 The Open Door Center · Tbilisi, Georgia
         </p>
       </div>
     </div>

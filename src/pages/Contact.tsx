@@ -95,8 +95,8 @@ const Contact = () => {
                 <div className="flex items-start gap-4">
                   <Facebook className="text-primary flex-shrink-0 mt-1" size={20} />
                   <div className="flex gap-4">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm hover:text-primary transition-colors">Facebook</a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm hover:text-primary transition-colors">Instagram</a>
+                    <a href="https://www.facebook.com/theopendoorcenter" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm hover:text-primary transition-colors">Facebook</a>
+                    <a href="https://www.instagram.com/hendrix.coaching" target="_blank" rel="noopener noreferrer" className="font-body text-muted-foreground text-sm hover:text-primary transition-colors">Instagram</a>
                   </div>
                 </div>
 

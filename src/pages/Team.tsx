@@ -75,10 +75,10 @@ const Team = () => (
     {/* Scripture banner */}
     <section className="bg-surface py-10 px-4">
       <FadeInSection className="container-narrow mx-auto text-center">
-        <blockquote className="font-display text-xl md:text-2xl italic text-accent-foreground leading-relaxed max-w-2xl mx-auto">
+        <blockquote className="font-display text-xl md:text-2xl italic text-foreground leading-relaxed max-w-2xl mx-auto">
           "I will ask the Father, and he will give you another advocate to help you and be with you forever."
         </blockquote>
-        <cite className="font-body text-sm text-muted-foreground mt-2 block">- John 14:16</cite>
+        <cite className="font-body text-sm text-foreground/70 mt-2 block">- John 14:16</cite>
       </FadeInSection>
     </section>
 
@@ -110,10 +110,10 @@ const Team = () => (
                   <a href="mailto:theopendoorcenter.tbs@gmail.com" className="hover:text-primary transition-colors" title="Email">
                     <Mail size={16} />
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <a href="https://www.facebook.com/theopendoorcenter" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     <Facebook size={16} />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <a href="https://www.instagram.com/hendrix.coaching" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     <Instagram size={16} />
                   </a>
                 </div>
