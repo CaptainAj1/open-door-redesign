@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 import BookingBanner from "@/components/BookingBanner";
 import kelseyPhoto from "@/assets/team/Kelsey.avif";
+import aboutPhoto from "@/assets/about_1.avif";
 
 const About = () => (
   <main>
