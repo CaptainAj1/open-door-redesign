@@ -60,10 +60,10 @@ const Navbar = () => {
             </Link>
           ))}
           <div className="flex items-center gap-3 ml-2">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={`transition-colors hover:text-primary ${solid ? "text-muted-foreground" : "text-card/70"}`}>
+            <a href="https://www.facebook.com/theopendoorcenter" target="_blank" rel="noopener noreferrer" className={`transition-colors hover:text-primary ${solid ? "text-muted-foreground" : "text-card/70"}`}>
               <Facebook size={16} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={`transition-colors hover:text-primary ${solid ? "text-muted-foreground" : "text-card/70"}`}>
+            <a href="https://www.instagram.com/hendrix.coaching" target="_blank" rel="noopener noreferrer" className={`transition-colors hover:text-primary ${solid ? "text-muted-foreground" : "text-card/70"}`}>
               <Instagram size={16} />
             </a>
           </div>
