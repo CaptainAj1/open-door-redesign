@@ -4,6 +4,7 @@ import { Heart, Users, Globe, ArrowRight, ArrowDown, Baby, Handshake, RefreshCw,
 import FadeInSection from "@/components/FadeInSection";
 import WaveDivider from "@/components/WaveDivider";
 import BookingBanner from "@/components/BookingBanner";
+import counsellingPhoto from "@/assets/counselling.jpg";
 
 const services = [
   { icon: Baby, title: "Pregnancy & Breastfeeding Coaching", desc: "Support for new and expecting mothers through every stage of the journey." },
