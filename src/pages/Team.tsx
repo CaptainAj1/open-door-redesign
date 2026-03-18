@@ -78,7 +78,7 @@ const Team = () => (
         <blockquote className="font-display text-xl md:text-2xl italic text-foreground leading-relaxed max-w-2xl mx-auto">
           "I will ask the Father, and he will give you another advocate to help you and be with you forever."
         </blockquote>
-        <cite className="font-body text-sm text-muted-foreground mt-2 block">- John 14:16</cite>
+        <cite className="font-body text-sm text-foreground/70 mt-2 block">- John 14:16</cite>
       </FadeInSection>
     </section>
 
