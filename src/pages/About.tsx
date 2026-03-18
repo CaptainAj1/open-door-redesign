@@ -24,8 +24,8 @@ const About = () => (
       <div className="container-narrow mx-auto grid md:grid-cols-2 gap-12 items-center">
         <FadeInSection>
           <img
-            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
-            alt="Community gathering"
+            src={aboutPhoto}
+            alt="About The Open Door Center"
             className="rounded-2xl shadow-card w-full object-cover aspect-[4/5]"
             loading="lazy"
           />

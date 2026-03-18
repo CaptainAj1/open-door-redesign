@@ -105,8 +105,8 @@ const Navbar = () => {
               </Button>
             </Link>
             <div className="flex gap-4 pt-2">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Facebook size={18} /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Instagram size={18} /></a>
+              <a href="https://www.facebook.com/theopendoorcenter" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Facebook size={18} /></a>
+              <a href="https://www.instagram.com/hendrix.coaching" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Instagram size={18} /></a>
             </div>
           </div>
         </div>

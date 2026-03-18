@@ -84,8 +84,8 @@ const Home = () => (
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <FadeInSection>
             <img
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80"
-              alt="Woman in natural light"
+              src={counsellingPhoto}
+              alt="Counselling session"
               className="rounded-2xl shadow-card w-full object-cover aspect-[4/5]"
               loading="lazy"
             />

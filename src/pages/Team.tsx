@@ -110,10 +110,10 @@ const Team = () => (
                   <a href="mailto:theopendoorcenter.tbs@gmail.com" className="hover:text-primary transition-colors" title="Email">
                     <Mail size={16} />
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <a href="https://www.facebook.com/theopendoorcenter" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     <Facebook size={16} />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <a href="https://www.instagram.com/hendrix.coaching" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     <Instagram size={16} />
                   </a>
                 </div>
