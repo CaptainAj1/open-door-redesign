@@ -86,13 +86,18 @@ const Pricing = () => {
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+    setTimeout(() => window.scrollTo(0, 0), 50);
+  };
+
   const handleBookClick = (room: Room) => {
     setSelectedRoom(room);
     setSelectedAddOns([]);
     setStartTime("");
     setEndTime("");
     setStep("addons");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop();
   };
 
   const toggleAddOn = (id: string) => {
@@ -104,7 +109,7 @@ const Pricing = () => {
   const handleContinueToForm = () => {
     if (startTime && endTime && endTime <= startTime) return;
     setStep("form");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop();
   };
 
   const handleBack = () => {
@@ -113,14 +118,14 @@ const Pricing = () => {
       setStep("cards");
       setSelectedRoom(null);
     }
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop();
   };
 
   const handleClose = () => {
     setStep("cards");
     setSelectedRoom(null);
     setSelectedAddOns([]);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop();
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -142,22 +147,22 @@ const Pricing = () => {
     return (
       <main>
         <section className="bg-primary pt-32 pb-12 px-4">
-          <div className="container-narrow mx-auto">
+          <div className="container-narrow mx-auto relative">
             <button
               onClick={handleClose}
-              className="absolute top-24 right-8 text-card/70 hover:text-card transition-colors"
+              className="absolute top-0 right-0 text-card/70 hover:text-card transition-colors"
             >
               <X size={24} />
             </button>
-            <div className="text-center">
+            <div className="text-center pr-8">
               <p className="font-body text-sm text-card/70 mb-2">
                 Booking: {selectedRoom.name} - {selectedRoom.price}₾ / hour
               </p>
-              <div className="flex justify-center gap-4 mt-4">
+              <div className="flex justify-center gap-2 sm:gap-4 mt-4">
                 {["addons", "form"].map((s, i) => (
-                  <div key={s} className="flex items-center gap-2">
+                  <div key={s} className="flex items-center gap-1.5 sm:gap-2">
                     <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-body font-semibold ${
+                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-body font-semibold ${
                         step === s
                           ? "bg-card text-primary"
                           : i === 0
@@ -167,10 +172,10 @@ const Pricing = () => {
                     >
                       {i + 1}
                     </div>
-                    <span className={`font-body text-sm ${step === s ? "text-card" : "text-card/50"}`}>
+                    <span className={`font-body text-xs sm:text-sm ${step === s ? "text-card" : "text-card/50"}`}>
                       {i === 0 ? "Add-ons" : "Contact"}
                     </span>
-                    {i === 0 && <ArrowRight size={14} className="text-card/30 mx-2" />}
+                    {i === 0 && <ArrowRight size={14} className="text-card/30 mx-1 sm:mx-2" />}
                   </div>
                 ))}
               </div>
@@ -657,7 +662,7 @@ const Pricing = () => {
                   <Button
                     variant="secondary"
                     size="lg"
-                    className="rounded-full px-10 font-body"
+                    className="rounded-full px-6 sm:px-10 font-body text-sm sm:text-base"
                   >
                     Contact Us for Exclusive Buyout
                   </Button>
