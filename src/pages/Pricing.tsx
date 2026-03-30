@@ -83,10 +83,14 @@ const Pricing = () => {
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
   const [step, setStep] = useState<"cards" | "addons" | "form">("cards");
   const [sending, setSending] = useState(false);
+  const [startTime, setStartTime] = useState("");
+  const [endTime, setEndTime] = useState("");
 
   const handleBookClick = (room: Room) => {
     setSelectedRoom(room);
     setSelectedAddOns([]);
+    setStartTime("");
+    setEndTime("");
     setStep("addons");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -98,6 +102,7 @@ const Pricing = () => {
   };
 
   const handleContinueToForm = () => {
+    if (startTime && endTime && endTime <= startTime) return;
     setStep("form");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -202,14 +207,35 @@ const Pricing = () => {
                           <Clock size={14} className="inline mr-1 -mt-0.5 text-primary" />
                           Start Time
                         </label>
-                        <Input required type="time" className="rounded-xl font-body" />
+                        <Input
+                          required
+                          type="time"
+                          value={startTime}
+                          onChange={(e) => {
+                            setStartTime(e.target.value);
+                            if (endTime && e.target.value >= endTime) setEndTime("");
+                          }}
+                          className="rounded-xl font-body"
+                        />
                       </div>
                       <div>
                         <label className="font-body text-sm font-medium text-foreground mb-1 block">
                           <Clock size={14} className="inline mr-1 -mt-0.5 text-primary" />
                           End Time
                         </label>
-                        <Input required type="time" className="rounded-xl font-body" />
+                        <Input
+                          required
+                          type="time"
+                          value={endTime}
+                          min={startTime || undefined}
+                          onChange={(e) => setEndTime(e.target.value)}
+                          className="rounded-xl font-body"
+                        />
+                        {endTime && startTime && endTime <= startTime && (
+                          <p className="font-body text-xs text-red-500 mt-1">
+                            End time must be after start time
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>
