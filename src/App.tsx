@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
+import Pricing from "./pages/Pricing";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

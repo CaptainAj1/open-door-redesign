@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Globe, ArrowRight, ArrowDown, Baby, Handshake, RefreshCw, User } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
-import WaveDivider from "@/components/WaveDivider";
 import BookingBanner from "@/components/BookingBanner";
 import counsellingPhoto from "@/assets/counselling.jpg";
 
@@ -52,8 +51,6 @@ const Home = () => (
       </div>
     </section>
 
-    <WaveDivider />
-
     {/* Services */}
     <section className="section-padding bg-surface">
       <div className="container-narrow mx-auto">
@@ -75,8 +72,6 @@ const Home = () => (
         </div>
       </div>
     </section>
-
-    <WaveDivider flip />
 
     {/* About Preview */}
     <section className="section-padding">
